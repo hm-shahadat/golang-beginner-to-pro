@@ -9,10 +9,9 @@ const (
 	processing       = "Processing"
 	prepared         = "Prepared"
 	confirmed        = "Confirmed"
-	doNotPay         = "Unpaid"
 )
 
-func enums(status order) {
+func enums[T any](status T) {
 	fmt.Print("Order Status: ", status)
 }
 func main() {
