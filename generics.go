@@ -21,13 +21,17 @@ func main() {
 	generics(val1)
 	generics(val3)
 
-	//stack
+	//for struct
 	myStack := stack[int]{
 		elements: []int{4, 5, 6},
 	}
 	myStack2 := stack[string]{
 		elements: []string{"Hossain"},
 	}
+	myStack3 := stack[bool]{
+		elements: []bool{true},
+	}
 	fmt.Println(myStack)
 	fmt.Println(myStack2)
+	fmt.Println(myStack3)
 }
