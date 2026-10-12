@@ -11,7 +11,7 @@ const (
 	confirmed        = "Confirmed"
 )
 
-func enums[T any](status T) {
+func enums(status order) {
 	fmt.Print("Order Status: ", status)
 }
 func main() {
