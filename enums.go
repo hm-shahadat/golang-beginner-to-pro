@@ -9,6 +9,7 @@ const (
 	processing       = "Processing"
 	prepared         = "Prepared"
 	confirmed        = "Confirmed"
+	doNotPay         = "Unpaid"
 )
 
 func enums(status order) {
