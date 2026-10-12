@@ -2,9 +2,9 @@ package main
 
 import "fmt"
 
-func generics[T any](value []T) {
+func generics[T any, v string](value []T, name v) {
 	for _, va := range value {
-		fmt.Println(va)
+		fmt.Println(va, name)
 	}
 }
 
@@ -17,9 +17,9 @@ func main() {
 	val1 := []int{1, 2, 3}
 	val2 := []string{"shahadat", "gazi"}
 	val3 := []bool{true, false}
-	generics(val2)
-	generics(val1)
-	generics(val3)
+	generics(val2, "aiub")
+	generics(val1, "iub")
+	generics(val3, "nsu")
 
 	//for struct
 	myStack := stack[int]{
