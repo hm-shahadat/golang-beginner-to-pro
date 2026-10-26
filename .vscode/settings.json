@@ -32,7 +32,20 @@
             }
         }
     ]
-}
+},
+"sqltools.connections": [
+    {
+        "ssh": "Disabled",
+        "previewLimit": 50,
+        "server": "localhost",
+        "port": 5432,
+        "driver": "PostgreSQL",
+        "name": "bms",
+        "database": "bms_dev",
+        "username": "postgres",
+        "password": "123456"
+    }
+]
 
 
 }
